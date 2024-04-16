@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-stormtech.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Agendamento JBL</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo-stormtech.PNG">
+        <a href="https://bystorm.com.br/" class="store">Loja</a>
+    </header>
+
+    <main>
+        <h1>Agendamento Para Suporte Bystorm</h1>
+        <div class="wrapper">
+        
+        <form 
+            id="contactform"
+            action="https://formsubmit.io/send/suporte@bystorm.com.br"
+            method="POST">
+            <!-- <input name="_redirect" type="hidden" id="name" value="https://your website url">  -->
+            
+            <div class="wrapper">
+                <label for="name">Categoria:</label>
+                <input type="text" class="input-value" name="caixa-de-som" id="caixa-de-som" disabled value="Caixa de Som JBL">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">Nome:</label>
+                <input type="text" class="input-value" name="Nome" id="name">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">Whatsapp:</label>
+                <input type="text" class="input-value" name="whatsapp" id="whatsapp">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">CPF:</label>
+                <input type="text" class="input-value" name="cpf" id="cpf">
+            </div>
+
+            <div class="wrapper">
+                <label for="caixa-de-som">Modelo:</label>
+                <select name="caixa-de-som" id="caixa-de-som">
+                    <option value="Select model">-- Selecione um Modelo --</option>
+                    <option value="Go2">JBL Go 2</option>
+                    <option value="Go3">JBL Go 3</option>
+                    <option value="go essential">JBL Go Essential</option>
+                    <option value="Clip 4">Clip 4</option>
+                    <option value="Flip 5">Flip 5</option>
+                    <option value="Flip 6">Flip 6</option>
+                    <option value="Flip Essential 2">Flip Essential 2</option>
+                    <option value="wind 3">JBL wind 3</option>
+                    <option value="Charge 5">Charge 5</option>
+                    <option value="Charge 5 Wifi">Charge 5 Wifi</option>
+                    <option value="Xtreme 3">Xtreme 3</option>
+                    <option value="Boombox 2">Boombox 2</option>
+                    <option value="Boombox 3">Boombox 3</option>
+                    <option value="Boombox 3 Wifi">Boombox 3 Wifi</option>
+                    <option value="Partybox Encore">Partybox Encore</option>
+                    <option value="Partybox Encore Essential">Partybox Encore Essential</option>
+                    <option value="Partybox 100">Partybox 100</option>
+                    <option value="Partybox 110">Partybox 110</option>
+                    <option value="Partybox 310">Partybox 310</option>
+                    <option value="Partybox 710">Partybox 710</option>
+                    <option value="Partybox 1000">Partybox 1000</option>
+                    <option value="Partybox Ultimate">Partybox Ultimate</option>
+                  </select>
+            </div>
+
+            <div class="agendamento">
+                <p>Pedíodo de agendamento:</p>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-date date-one" id="dateOne">12 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioOne">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-date date-two" id="dateTwo">13 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioTwo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-date date-three" id="dateThree">15 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioThree">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-date date-four" id="dateFour">16 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioFour">
+                    </div>
+                </div>
+            </div>
+
+            <div class="agendamento">
+                <p>Horário do agendamento:</p>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-hour hour-nine" id="hourOne">09:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radioOneHour">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-hour hour-eleven" id="hourTwo">11:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radioTwoHour">
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="select-hour hour-three" id="hourThree">15:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radiothreeHour">
+                    </div>
+                </div>
+            </div>
+
+            <input value="Agendar" type="submit" class="agendar">  
+        </form>
+
+    </main>   
+    
+    <script src="../js/caixaDeSomJBL.js"></script>
+    <script src="../js/validationCpf.js"></script>
+</body>
+</html>

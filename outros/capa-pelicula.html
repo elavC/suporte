@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-stormtech.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Agendamento Capa e Pelicula</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo-stormtech.PNG">
+        <a href="https://bystorm.com.br/" class="store">Loja</a>
+    </header>
+
+    <main>
+        <h1>Agendamento Para Suporte Bystorm</h1>
+        <div class="wrapper">
+        
+        <form 
+            id="contactform"
+            action="https://formsubmit.io/send/suporte@bystorm.com.br"
+            method="POST">
+            <!-- <input name="_redirect" type="hidden" id="name" value="https://your website url">  -->
+            
+            <div class="wrapper">
+                <label for="name">Categoria:</label>
+                <input type="text" class="input-value" name="cabo-fonte" id="capa-pelicula" disabled value="Capa e Pelicula">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">Nome:</label>
+                <input type="text" class="input-value" name="Nome" id="name">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">Whatsapp:</label>
+                <input type="text" class="input-value" name="whatsapp" id="whatsapp">
+            </div>
+
+            <div class="wrapper">
+                <label for="name">CPF:</label>
+                <input type="text" class="input-value" name="cpf" id="cpf">
+            </div>
+
+            <div class="wrapper">
+                <label for="caixa-de-som">Modelo:</label>
+                <select name="caixa-de-som" id="caixa-de-som">
+                    <option value="Select model">-- Selecione um Modelo --</option>
+                    <option value="capa-xone">Capa X-One</option>
+                    <option value="pelicula-xone">Pelicula X-One</option>
+                    <option value="kit-xone">Kit X-One</option>
+                    <option value="capa-bystorm">Capa Bystorm</option>
+                    <option value="pelicula-bystorm">Película Bystorm</option>
+                  </select>
+            </div>
+
+            <div class="agendamento">
+                <p>Pedíodo de agendamento:</p>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-date date-one" id="dateOne">12 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioOne">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-date date-two" id="dateTwo">13 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioTwo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-date date-three" id="dateThree">15 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioThree">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-date date-four" id="dateFour">16 de abril
+                        <input type="radio" class="input-value" name="date" class="date" id="radioFour">
+                    </div>
+                </div>
+            </div>
+
+            <div class="agendamento">
+                <p>Horário do agendamento:</p>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <div class="select-hour hour-nine" id="hourOne">09:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radioOneHour">
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="select-hour hour-eleven" id="hourTwo">11:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radioTwoHour">
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <div class="select-hour hour-three" id="hourThree">15:00 Hrs
+                        <input type="radio" class="input-value" name="hour" class="hour" id="radiothreeHour">
+                    </div>
+                </div>
+            </div>
+
+            <input value="Agendar" type="submit" class="agendar">  
+        </form>
+
+    </main>   
+    
+    <script src="../js/capaPelicula.js"></script>
+    <script src="../js/validationCpf.js"></script>
+</body>
+</html>
